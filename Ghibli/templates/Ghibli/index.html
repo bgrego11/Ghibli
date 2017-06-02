@@ -1,0 +1,5 @@
+    <ul>
+    {% for movie in movie_list %}
+        <li><a href="/Ghibli/{{ movie.id }}/">{{ movie.title }}</a></li>
+    {% endfor %}
+    </ul>

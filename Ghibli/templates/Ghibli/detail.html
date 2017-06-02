@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+				<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+				<link href="https://fonts.googleapis.com/css?family=Barrio|Metamorphous|Montserrat+Subrayada|News+Cycle|Vidaloka" rel="stylesheet">
+				{% load static %}
+        <link href="{% static "Ghibli/style.css" %}"rel="stylesheet">
+    </head>
+    <body>
+		<div class="row">
+		<div class="col-sm-12 col-lg-2">
+		  <div class="buttons">
+			<a class="btn btn-default" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+			<a class="btn btn-default"><i class="fa fa-home" aria-hidden="true"></i></a>
+			<a class="btn btn-default" href="/Ghibli/{{movie.id |add:'-1' }}"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+			<a class="btn btn-default" href="/Ghibli/{{movie.id |add:'+1' }}" ><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+		  </div>
+			<div class="collapse" id="collapseExample">
+				<div id="navBorder">
+				<div class="card cards card-block" id="nav">
+					<h6>Film List</h6>
+					<ul>					
+						<li><a href="/Ghibli/1/">Castle in the Sky</a></li>
+						<li><a href="/Ghibli/2/">Grave of the Fireflies</a></li>					
+						<li><a href="/Ghibli/3/">My Neighbor Totoro</a></li>					
+						<li><a href="/Ghibli/4/">Kiki's Delivery Service</a></li>					
+						<li><a href="/Ghibli/5/">Only Yesterday</a></li>					
+						<li><a href="/Ghibli/6/">Porco Rosso</a></li>					
+						<li><a href="/Ghibli/7/">Pom Poko</a></li>				
+						<li><a href="/Ghibli/8/">Whisper of the Heart</a></li>				
+						<li><a href="/Ghibli/9/">Princess Mononoke</a></li>				
+						<li><a href="/Ghibli/10/">My Neighbors the Yamadas</a></li>					
+						<li><a href="/Ghibli/11/">Spirited Away</a></li>					
+						<li><a href="/Ghibli/12/">The Cat Returns</a></li>					
+						<li><a href="/Ghibli/13/">Howl's Moving Castle</a></li>					
+						<li><a href="/Ghibli/14/">Tales from Earthsea</a></li>					
+						<li><a href="/Ghibli/15/">Ponyo</a></li>				
+						<li><a href="/Ghibli/16/">Arrietty</a></li>				
+						<li><a href="/Ghibli/17/">From Up on Poppy Hill</a></li>			
+						<li><a href="/Ghibli/18/">The Wind Rises</a></li>			
+						<li><a href="/Ghibli/19/">The Tale of the Princess Kaguya</a></li>			
+						<li><a href="/Ghibli/20/">When Marnie Was There</a></li>				
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+		<br>
+		</div>
+		
+			<div class="col-sm-12 col-lg-8   imageborder">
+				<div class="well" id="main">
+					<h1 class="display-3">{{ movie.title }}</h3>
+					<div id="yr" >{{ movie.rel_year }}</div>
+					<img src= {{ movie.image_url }} class="img-thumbnail rounded" >
+					<p >{{ movie.plot }}</p>
+							
+							<span class="badge">Metacritic Score: {{ movie.score }}</span>
+							
+					
+				</div>
+			</div>
+    </body>
+</html>

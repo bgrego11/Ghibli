@@ -1,0 +1,102 @@
+body {
+    
+    background-image: url("https://christandpopculture.com/wp-content/uploads/2014/08/20140816.ghibliA.jpg");
+    
+}
+
+div.imageborder {
+	border-radius: 999em;
+	padding: 20px;
+    
+	background-image: url('https://s-media-cache-ak0.pinimg.com/originals/a2/ee/09/a2ee091602e165a788fb797e09781a4b.jpg');
+	 /* Adjust the scale of your border image */
+}
+
+img {
+    margin-bottom: 5%;
+}
+
+
+#main {
+    background-color: #F2FBE0;
+    color: #2D2D34;
+    border-radius: 999em;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 4%
+    
+}
+
+p {
+    margin-right: 18%;
+    margin-left: 18%;
+    margin-bottom: 3%;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    font-weight: 700
+}
+
+h1 {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 2%;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    
+}
+
+#yr {
+    margin-bottom: 2%;
+    font-family: 'Vidaloka', serif;
+    color: #D44D5C
+}
+
+span {
+    font-family: 'Vidaloka', serif;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.badge {
+    background-color: #D44D5C;
+}
+
+.btn {
+    background-color: #D44D5C;
+    color: #260F26;
+    }
+#navBorder {
+    margin-top: 3%;
+    padding: 5px;
+    width: 85%;
+	background-image: url('https://s-media-cache-ak0.pinimg.com/originals/a2/ee/09/a2ee091602e165a788fb797e09781a4b.jpg');
+}
+
+h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800
+    
+}
+
+#nav {
+    
+    background-color: #F2FBE0;
+    width: 100%;
+    font-size: 12px;
+     font-family: 'News Cycle', sans-serif;
+    
+}
+
+#nav  a{
+    color: #D44D5C;
+}
